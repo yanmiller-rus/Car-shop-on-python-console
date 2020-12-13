@@ -33,8 +33,8 @@ price_of_car = int(input())
 print("Цена выбранного автомобиля: %s " % price_of_car)
 
 print("Укажите ваше имя")
-name = int(input())
-print("Меня зовут: %s " % name)
+name = str(input())
+print("Ваше имя: %s " % name)
 
 
 rest_money = your_balance - price_of_car
