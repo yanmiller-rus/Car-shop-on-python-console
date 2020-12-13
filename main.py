@@ -3,6 +3,7 @@ d["car3"] = "Toyota"
 d["car4"] = "Aston Martin"
 d["car5"] = "Range Rover"
 d["car6"] = "Jaguar"
+print("Всего машин в магазине: ", len(d))
 print("Авто-словрь", d.values())
 
 # d2 = {a: a ** 2 for a in range(1, 10)}
