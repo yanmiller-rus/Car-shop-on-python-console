@@ -1,21 +1,17 @@
-d = dict(car1="BMW", car2="Porshe")
-d["car3"] = "Toyota"
-d["car4"] = "Aston Martin"
-d["car5"] = "Range Rover"
-d["car6"] = "Jaguar"
-eval('''print("Всего машин в магазине: ", len(d))''')
+name_of_company = "CAR SHOP on console"
+print("%s" % name_of_company)
+location = "Moscow, Russia"
+print("Место расположения: %s " % location)
+
+print("Доступный ассортимент")
+d = dict(car1="BMW - 5 000 000 руб", car2="Porshe - 3 500 000 руб")
+d["car3"] = "Toyota - 1 500 000 руб"
+d["car4"] = "Aston Martin - 17 490 000 руб"
+d["car5"] = "Range Rover - 4 000 000 руб"
+d["car6"] = "Jaguar - 6 400 000 руб"
+eval('''print("Всего машин в салоне: ", len(d))''')
 eval('''print("Авто-словрь", d.values())''')
 
-# d2 = {a: a ** 2 for a in range(1, 10)}
-# d2.update(d)
-# print("Словарь №2", d2)
-
-eval('''print("Цена BMW: 5 000 000")''')
-eval('''print("Цена Porsche: 3 500 000")''')
-eval('''print("Цена Toyota: 1 500 000")''')
-eval('''print("Цена Aston Martin: 17 490 000")''')
-eval('''print("Цена Range Rover: 4 000 000")''')
-eval('''print("Цена Jaguar: 6 400 000 ")''')
 
 eval('''print("Ваша сумма денег: ")''')
 your_balance = int(input())
