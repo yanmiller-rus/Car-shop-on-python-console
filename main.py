@@ -64,9 +64,12 @@ class Shop:
             print("Пожалуйста, пополните ваш счет для продолжения покупки")
             client_1.increase_balance()
             client_1.check_my_balance()
-            self.balance = True
-            if self.balance == True:
+            if self.balance >= 1500000:
                 client_1.buy_car()
+            else:
+                print('Средств все еще не достаточно для транзакции :(')
+                print('Продолжайте пополнять счет хотя бы до 1 500 000')
+                client_1.increase_balance()
 
 
 client_1 = Shop('Yan Miller', balance='')
