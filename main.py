@@ -26,10 +26,8 @@ class Shop:
         for key, values in cars.items():
             print(key, values)
 
-
     def check_my_balance(self):
         print(self.balance)
-
 
     def increase_balance(self):
         print('Введите сумму для пополнения счета')
@@ -50,9 +48,16 @@ class Shop:
             print("Введите цену машины")
             price_of_car = int(input())
             print("Цена выбранного автомобиля: %s " % price_of_car)
+            if price_of_car > self.balance:
+                print('Вам не хватает средств. Для пополнения нажмите "+"')
+                plusser = input()
+                if plusser == '+':
+                    client_1.increase_balance()
+                else:
+                    return 0
 
             print("Укажите ваше имя")
-            name = str(input())
+            name = input()
             print("Ваше имя: %s " % name)
 
             rest_money = self.balance - price_of_car
